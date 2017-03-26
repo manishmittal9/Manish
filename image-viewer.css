@@ -1,0 +1,79 @@
+
+.container {
+  width: 60%;
+  height:620px;
+  display: flex;
+  margin-left: 20%;
+  justify-content: center;
+  position: relative;
+}
+.container img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+}
+
+.thumbnails li{
+  display: inline-block;
+  width: 23%;
+  margin-left: 2%;
+  text-align: center;
+}
+
+.thumbnails li:hover .item-hugger { background: white; }
+
+.thumbnails input[name="select"] { display: none; }
+
+.thumbnails .item-hugger {
+  position: relative;
+  height: 140px;
+  margin: 20px 0;
+  background: #f2f2f2;
+  transition: all 150ms ease-in-out;
+}
+
+.thumbnails label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.thumbnails .thumb-image {
+  height: 100%;
+}
+
+.thumbnails .content {
+  position: absolute;
+  left: 10%;
+  text-align: center;
+  width: 600px;
+  height: 430px;
+  padding: 20px;
+  opacity: 0;
+  transition: all 150ms linear;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.item-wrapper img{
+    position: absolute;
+    max-height: 400px;
+}
+
+.thumbnails input[name="select"]:checked + .item-hugger {
+  height: 180px;
+  margin: 0;
+  background: white;
+}
+
+.thumbnails input[name="select"]:checked ~ .content { opacity: 1; }

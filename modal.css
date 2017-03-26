@@ -1,0 +1,190 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background: #FFF;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: graytext;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    font-size: 16px;
+    text-transform:  uppercase;
+    background: #F4F4F2;
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #DDD;
+    font-weight: bold;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* User Login Form */
+.user_login{
+    padding: 20px;
+}
+.user_login label  {
+    display:  block;
+    margin-bottom: 2%;
+}
+ 
+.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
+    display:  block;
+    width: 95%;
+    padding:  1.5%;
+    border: 1px solid #DDD;
+    color: #666;
+}
+ 
+.user_login input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+ 
+.user_login input[type="checkbox"]+label  {
+    float: left;
+}
+ 
+ 
+.user_login .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+ 
+.forgot_password  {
+    display: block;
+     margin:  20px 0 10px;
+     clear:  both;
+     overflow:  hidden;
+     text-decoration:  none;
+     color: #ED6347;
+}
+
+.action_btns  {
+    clear: both;
+     overflow:  hidden;
+}
+ 
+.action_btns input[type=submit]  {
+    display:  block;
+}
+.btn  {
+    padding: 10px 20px;
+     background:  #F4F4F2;
+}
+ 
+.btn_red  {
+    background:  #ED6347;
+     color:  #FFF;
+}
+ 
+.btn:hover  {
+    background:  #E4E4E2;
+}
+ 
+.btn_red:hover  {
+    background:  #C12B05;
+        cursor: pointer;
+}
+ 
+ input[type=submit] .btn  {
+    color: #666;
+     text-align:  center;
+     text-decoration:  none;
+}
+ 
+ input[type=submit] .btn_red  {
+    color:  #FFF;
+}
+ 
+.one_half  {
+    width: 50%;
+     display:  block;
+     float: left;
+}
+ 
+.one_half.last  {
+    width: 45%;
+     margin-left: 5%;
+}
+
+/* User Register Form */
+.user_register  {
+    padding: 20px;
+}
+ 
+.user_register label  {
+    display:  block;
+    margin-bottom: 2%;
+}
+ 
+.user_register input[type="text"],  .user_register input[type="email"],  .user_register input[type="password"]{
+    display:  block;
+     width: 95%;
+     padding:  10px;
+     border: 1px solid #DDD;
+     color: #666;
+}
+ 
+.user_register input[type="checkbox"]  {
+    float: left;
+     margin-right: 5px;
+}
+ 
+.user_register input[type="checkbox"]+label  {
+    float: left;
+}
+  
+.user_register .checkbox  {
+    margin-bottom:  10px;
+     clear:  both;
+     overflow:  hidden;
+}
+
